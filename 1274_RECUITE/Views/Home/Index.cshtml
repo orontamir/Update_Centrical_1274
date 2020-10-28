@@ -1,0 +1,59 @@
+﻿@model _1274_RECUITE.Models.Portal
+
+
+@{
+    ViewBag.Title = "User Registration";
+    var gatePath = "/1247_Recruite/Content/images/שער.png";
+}
+ 
+ 
+<div class="rightToLeft" >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12" style="  height: 55% ">
+                <img class="rightToLeft card-img-top" src="@gatePath" asp-append-version="true" />
+             
+                @*<div class="col cornerImage">*@
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4" style="margin-right: 32%;">
+                      <h2 class="rightToLeft" style="color:rgb(0, 157, 148);"> הזן טלפון</h2>
+            
+                <br />
+                <h4 class="dialogBox rightToLeft"></h4>
+                <br />
+
+
+                <form method="post">
+                    <div asp-validation-summary="All" class="text-danger rightToLeft"></div>
+                    <br />
+                    <br />
+                    <div class=" form-group">
+                        <label class="rightToLeft" asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control" />
+                        @*<span asp-validation-for="Email" class="text-danger rightToLeft"></span>*@
+
+
+                    </div>
+
+
+
+                    <div>
+
+                        <button type="submit" class="btn btn-primary" style="float:right;">שלח</button>
+
+                    </div>
+
+
+
+                </form>
+
+            </div>
+
+       
+
+        </div>
+</div>

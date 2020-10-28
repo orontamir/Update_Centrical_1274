@@ -1,0 +1,70 @@
+﻿
+ 
+    @media (max-width: 830px) {
+        .container {
+            width: 750px;
+        }
+
+        .cornerImage {
+            display: none;
+        }
+
+       
+
+        /*.col-sm-4
+{width:100% !important}*/
+
+    }
+.dialogBox {
+    color:darkred; clear: both;
+}
+.card-img-top {
+    width: 92% !important;
+    height: 55% !important;
+}
+
+
+    .btn-primary {
+        background-color: rgb(0, 157, 148) !important; 
+       float:right;
+    }
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    /* Set padding to keep content from hitting the edges */
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+    .dl-horizontal dt {
+        white-space: normal;
+    }
+
+    /* Set width on the form input elements since they're 100% wide by default */
+    input,
+    select,
+    textarea {
+        max-width: 280px;
+    }
+
+    .btn {
+        width: 75px;
+    }
+
+    .imageThumbnail {
+        height: 200px;
+        width: auto;
+        width: auto;
+    }
+
+    .rightToLeft {
+        direction: rtl !important;
+        float: right !important;
+    }

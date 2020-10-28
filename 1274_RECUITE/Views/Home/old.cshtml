@@ -1,0 +1,65 @@
+﻿@model _1274_RECUITE.Models.Recruite
+
+
+@{
+    ViewBag.Title = "User Registration";
+
+}
+@using (Html.BeginForm())
+    {
+    
+
+           <h1  class="rightToLeft">@ViewBag.error </h1>
+    <div class="rightToLeft">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" style="  height: 55% ">
+                    <img class="rightToLeft card-img-top" src="~/Content/images/header.png" asp-append-version="true" />
+
+                    @*<div class="col cornerImage">*@
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4" style="margin-right: 4%; margin-top:5%;">
+                    <h2 class="rightToLeft" style="color:rgb(0, 157, 148);"> הזן טלפון</h2>
+
+                    <br />
+                    <h4 class="dialogBox rightToLeft"></h4>
+                    <br />
+
+
+                   
+                        <div asp-validation-summary="All" class="text-danger rightToLeft"></div>
+                        <br />
+                        <br />
+                        <div class="form-group">
+                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "rightToLeft", @value="0" }) 
+                            @*@Html.ValidationMessageFor(model => model.PhoneNumber)*@
+                       
+                            @*<label class="rightToLeft" asp-for="Phone"></label>
+        <input asp-for="Phone" class="form-control" />*@
+                            @*<span asp-validation-for="Email" class="text-danger rightToLeft"></span>*@
+
+
+                        </div>
+                        <br />
+                        <br />
+                        <div>
+
+                            @Html.ActionLink("שלח", "SubmitForm", "Home", new { PhoneNumber = Model.PhoneNumber}, new { @class = "btn btn-primary" })  
+                            @*<button type="submit" onclick="location.href='@Url.Action("SubmitForm", "Home" , new { PhoneNumber =""}  )'" class="btn btn-primary" style="float:right;">שלח</button>*@
+
+                        </div>
+
+                    
+
+                </div>
+
+
+            </div> 
+    </div>
+        </div>
+
+}
